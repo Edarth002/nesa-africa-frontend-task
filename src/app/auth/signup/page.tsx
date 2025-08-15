@@ -105,6 +105,7 @@ const Signup = () => {
         <p className="text-sm text-stone-100 mt-3">We would redirect you to login page shortly, so you can get started</p>
       </section>):(
       <form
+        onSubmit={handleSubmit}
         className="md:w-1/2 flex flex-col justify-center mx-auto md:p-10 p-5 rounded-xl border border-black/20 bg-black/5 backdrop-blur-md shadow-lg animate-slideIn"
       >
         <div className="bg-black md:w-2/5 w-4/5 rounded-full flex mt-3 p-0.5 h-10">
@@ -175,12 +176,10 @@ const Signup = () => {
             className="bg-black text-black"
           />
         </div>
-        <button
-          value="Submit"
-          className="bg-white rounded-md p-2 text-black text-lg hover:bg-white/80 mt-7 cursor-pointer duration-500"
-          onClick={handleSubmit}>
-            {loading ? "Submitting..." : "Submit"}
-            </button>
+        <input
+          type="submit"
+          value={loading ? "Submitting..." : "Submit"}
+          className="bg-white rounded-md p-2 text-black text-lg hover:bg-white/80 mt-7 cursor-pointer duration-500"/>
         <p className="text-red-500 text-sm mt-2">{error}</p>
       </form>)}
       
