@@ -12,7 +12,7 @@ interface FormState {
   isChecked: boolean;
 }
 
-export const Signup = () => {
+const Signup = () => {
   const [form, setForm] = useState<FormState>({
     firstname: "",
     lastname: "",
@@ -187,3 +187,5 @@ export const Signup = () => {
     </div>
   );
 };
+
+export default Signup
