@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Signup to NESA Africa",
+  title: "Signup to NESA Africa Gallery",
   description:
-    "A Frontend task assigned by New Education Standard Awards Africa as part of an application process",
+    "A Frontend task assigned by New Education Standard Awards Africa as part of application process",
 };
 
 export default function RootLayout({
