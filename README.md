@@ -1,4 +1,4 @@
-
+Second stage of application to NESA-Africa: A frontend Task featuring a signup page with regular flow without a backend connection
 
 ## 🚀 Features
 - **Responsive design** for desktop and mobile
